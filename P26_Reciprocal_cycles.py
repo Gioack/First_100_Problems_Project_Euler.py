@@ -7,15 +7,15 @@ def Reciprocal_cycles():
         reminders = dict()
         while((reminder != 0) and (reminder not in reminders)):        
             reminders[reminder] = len(result)
-            reminder *= 10 #10
-            digit = reminder // denr #0
+            reminder *= 10 
+            digit = reminder // denr 
             result += str(digit) 
-            reminder = reminder % denr #10 
+            reminder = reminder % denr  
         if reminder == 0:
             continue
         if len(result[reminders[reminder]:]) > len(longest_recurring_period):
             longest_recurring_period = result
             longests_denominator = denr
-    return (longests_denominator,longest_recurring_period)
+    return (longests_denominator, longest_recurring_period)
 
 print(Reciprocal_cycles())
