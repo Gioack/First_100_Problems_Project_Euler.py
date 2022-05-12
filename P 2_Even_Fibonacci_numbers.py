@@ -1,11 +1,12 @@
-from ast import Num
+def is_even(num):
+    return num % 2 == 0
 
 
-Numbers = [0,1]
-Sum =  0
-while Numbers[-1] < 4000000:
-    Numbers.append(Numbers[-2]+Numbers[-1])
-for x in Numbers[:-1]:
-    if x % 2 == 1:
-        Sum += x
-print(Sum)
+def even_fibonacci_numbers():
+    fibonacci_numbers = [0,1]
+    while fibonacci_numbers[-1] < 4000000:
+        fibonacci_numbers.append(fibonacci_numbers[-2]+fibonacci_numbers[-1])
+    return sum(filter(is_even, fibonacci_numbers))
+
+
+print(even_fibonacci_numbers())
