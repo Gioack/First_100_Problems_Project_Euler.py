@@ -4,6 +4,7 @@ def isprime(num):
             return False
     return True
 
+
 def _10001st_prime():
     counter_of_primes = 0
     x = 2
@@ -13,4 +14,6 @@ def _10001st_prime():
         if counter_of_primes == 10001:
             return x
         x += 1
+
+
 print(_10001st_prime())

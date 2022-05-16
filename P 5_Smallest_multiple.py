@@ -1,4 +1,4 @@
-def Smallest_multiple():
+def smallest_multiple():
     x = 2520 
     while True:
         x += 1
@@ -7,4 +7,6 @@ def Smallest_multiple():
                 break
             if y==20:
                 return x
-print(Smallest_multiple())
+
+
+print(smallest_multiple())

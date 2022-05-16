@@ -1,7 +1,9 @@
-def Power_digit_sum():
+def power_digit_sum():
     x = 2**1000
-    Sum_digit = 0
+    sum_digits = 0
     for i in str(x):
-        Sum_digit += int(i)
-    return Sum_digit
-print(Power_digit_sum())
+        sum_digits += int(i)
+    return sum_digits
+
+    
+print(power_digit_sum())

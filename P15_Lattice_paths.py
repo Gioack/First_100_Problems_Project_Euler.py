@@ -1,10 +1,12 @@
-def Summation(num):
-    Summation = 1
-    for i in range(1,num+1):
-        Summation *= i
-    return Summation
-def Lattice_paths(): 
-    return Summation(40)/(Summation(20)*Summation(20))
+def get_factorial(num):
+    factorial = 1
+    for i in range(2,num+1):
+        factorial *= i
+    return factorial
 
-print(Lattice_paths())
 
+def lattice_paths(): 
+    return get_factorial(40)/(get_factorial(20)*get_factorial(20))
+
+
+print(lattice_paths())

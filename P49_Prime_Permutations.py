@@ -4,7 +4,7 @@ def isprime(num):
             return False
     return True
 
-def Prime_permutations():
+def prime_permutations():
     result = list()
     for x in filter(isprime,range(1000,9999)):
         
@@ -12,14 +12,14 @@ def Prime_permutations():
             
             if ((isprime(x+y)) and (isprime(x+2*y))):
 
-                Bool1 = all(((z in str(x+y)) and (z in str(x+2*y))) for z in str(x))
-                Bool2 = all(((z in str(x)) and (z in str(x+2*y))) for z in str(x+y))
-                Bool3 = all(((z in str(x+y)) and (z in str(x))) for z in str(x+2*y))
+                bool1 = all(((z in str(x+y)) and (z in str(x+2*y))) for z in str(x))
+                bool2 = all(((z in str(x)) and (z in str(x+2*y))) for z in str(x+y))
+                bool3 = all(((z in str(x+y)) and (z in str(x))) for z in str(x+2*y))
                 
-                if Bool1 and Bool2 and Bool3 and (x+y*2 < 10000):    
+                if bool1 and bool2 and bool3 and (x+y*2 < 10000):    
                     result.append([x,x+y,x+y*2])
     return result
                 
 
 
-print(Prime_permutations())
+print(prime_permutations())

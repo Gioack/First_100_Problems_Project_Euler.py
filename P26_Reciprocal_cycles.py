@@ -1,4 +1,4 @@
-def Reciprocal_cycles():
+def reciprocal_cycles():
     longest_recurring_period = ""
     longests_denominator = ""
     for denr in range(2,1000):
@@ -18,4 +18,5 @@ def Reciprocal_cycles():
             longests_denominator = denr
     return (longests_denominator, longest_recurring_period)
 
-print(Reciprocal_cycles())
+
+print(reciprocal_cycles())

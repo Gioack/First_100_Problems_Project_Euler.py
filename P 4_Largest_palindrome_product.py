@@ -11,6 +11,5 @@ def largest_palindrome_product():
                 largest_product = product
     return largest_product 
 
-    
-print(largest_palindrome_product()) 
-    
+
+print(largest_palindrome_product())
