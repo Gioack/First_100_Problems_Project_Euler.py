@@ -5,5 +5,5 @@ def power_digit_sum():
         sum_digits += int(i)
     return sum_digits
 
-    
+
 print(power_digit_sum())

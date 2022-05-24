@@ -9,7 +9,7 @@ class big_number():
                 break
             sum_numbers += int(self.num[index_start:index_end])
             index_start += 50
-            index_end += 50     
+            index_end += 50
         return str(sum_numbers)[:10]
 
     def __init__(self):
@@ -113,6 +113,7 @@ class big_number():
 72107838435069186155435662884062257473692284509516\
 20849603980134001723930671666823555245252804609722\
 53503534226472524250874054075591789781264330331690"
+
 
 s = big_number()
 print(s.large_Sum())

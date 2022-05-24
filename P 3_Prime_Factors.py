@@ -1,12 +1,12 @@
 def is_prime(num):
-    for n in range(2,int(num**0.5)+1):
-        if num%n==0:
+    for n in range(2, int(num**0.5)+1):
+        if num % n == 0:
             return False
     return True
 
 
 def get_smallest_prime_divisor(number):
-    divisor_prime = 2   
+    divisor_prime = 2
     while number % divisor_prime != 0:
         divisor_prime += 1
         while not is_prime(divisor_prime):

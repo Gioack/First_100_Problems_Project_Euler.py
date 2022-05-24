@@ -1,6 +1,6 @@
 def get_summation(num):
     summation = 1
-    for i in range(2,num+1):
+    for i in range(2, num+1):
         summation *= i
     return summation
 

@@ -5,11 +5,12 @@ class largest_product_in_a_grid():
 
     def get_largest_product_in_the_grid(self):
         largest_product = 0
-        for index,item in enumerate(self.num):
-            greatest_product_of_index = max([self.get_product_down(index),self.get_product_up(index),self.get_product_right(index),self.get_product_left(index),
-                                            self.get_product_diagonally_up_right(index),self.get_product_diagonally_up_left(index), 
+        for index, item in enumerate(self.num):
+            greatest_product_of_index = max([self.get_product_down(index), self.get_product_up(index), self.get_product_right(index), self.get_product_left(index),
+                                            self.get_product_diagonally_up_right(
+                                                index), self.get_product_diagonally_up_left(index),
                                             self.get_product_diagonally_down_right(index), self.get_product_diagonally_down_left(index)])
-            if  greatest_product_of_index > largest_product:
+            if greatest_product_of_index > largest_product:
                 largest_product = greatest_product_of_index
         return largest_product
 
