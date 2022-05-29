@@ -5,23 +5,22 @@ def isprime(num):
     return True
 
 
+def do_numbers_have_same_digits(numbers):
+    a, b, c = numbers[0], numbers[1], numbers[2]
+    for digit in str(a):
+        if (str(a).count(digit) != str(b).count(digit)) or (str(a).count(digit) != str(c).count(digit)):
+            return False
+    return True
+
+
 def prime_permutations():
     result = list()
-    for x in filter(isprime, range(1000, 9999)):
-
-        for y in range(1, 4500):
-
-            if ((isprime(x+y)) and (isprime(x+2*y))):
-
-                bool1 = all(((z in str(x+y)) and (z in str(x+2*y)))
-                            for z in str(x))
-                bool2 = all(((z in str(x)) and (z in str(x+2*y)))
-                            for z in str(x+y))
-                bool3 = all(((z in str(x+y)) and (z in str(x)))
-                            for z in str(x+2*y))
-
-                if bool1 and bool2 and bool3 and (x+y*2 < 10000):
-                    result.append([x, x+y, x+y*2])
+    for a in filter(isprime, range(1000, 5000)):
+        for k in range(1, 4500):
+            b = a+k
+            c = a+2*k
+            if isprime(b) and isprime(c) and do_numbers_have_same_digits([a, b, c]):
+                result.append([a, b, c])
     return result
 
 
