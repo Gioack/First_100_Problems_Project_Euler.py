@@ -15,7 +15,7 @@ class pentagon_numbers():
         k = (sqrt(24*n+1)+1)/6
         return k.is_integer()
 
-    def create_pentagon_numbers(self, how_many_numbers: int):
+    def create_pentagon_numbers(self, how_many_numbers):
         self.pentagon_numbers = [
             n*(3*n-1)/2 for n in range(1, how_many_numbers+1)]
 
