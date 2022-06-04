@@ -1,14 +1,8 @@
-def get_factorial(num):
-    factorial = 1
-    if num == 0:
-        return factorial
-    for i in range(2, num+1):
-        factorial *= i
-    return factorial
+from math import factorial
 
 
 def digit_factorials():
-    factorials_value = [get_factorial(x) for x in range(10)]
+    factorials_value = [factorial(x) for x in range(10)]
     sum_numbers_are_digit_factorials = 0
     for number in range(3, 2500000):
         sum_digit_factorials = 0
