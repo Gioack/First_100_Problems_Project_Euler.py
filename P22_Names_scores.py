@@ -6,11 +6,11 @@ def open_file(url):
 
 
 def get_score(name):
-    alphabeth = {letter: lenght for letter, lenght in zip(
+    alphabeth_and_position = {letter: lenght for letter, lenght in zip(
         "ABCDEFGHIJKLMNOPQRSTUVWXYZ", range(1, 27))}
     total_name = 0
     for letter in name:
-        total_name += alphabeth[letter]
+        total_name += alphabeth_and_position[letter]
     return total_name
 
 
