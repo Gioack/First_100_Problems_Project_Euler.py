@@ -1,17 +1,4 @@
 class big_number():
-    def large_Sum(self):
-        sum_numbers = 0
-        index_start = 0
-        index_end = 50
-        for _ in range(101):
-            if index_end == 5000:
-                sum_numbers += int(self.num[index_start:])
-                break
-            sum_numbers += int(self.num[index_start:index_end])
-            index_start += 50
-            index_end += 50
-        return str(sum_numbers)[:10]
-
     def __init__(self):
         self.num = "37107287533902102798797998220837590246510135740250\
 46376937677490009712648124896970078050417018260538\
@@ -114,6 +101,18 @@ class big_number():
 20849603980134001723930671666823555245252804609722\
 53503534226472524250874054075591789781264330331690"
 
+    def large_Sum(self):
+        sum_numbers = 0
+        index_start = 0
+        index_end = 50
+        for _ in range(101):
+            if index_end == 5000:
+                sum_numbers += int(self.num[index_start:])
+                break
+            sum_numbers += int(self.num[index_start:index_end])
+            index_start += 50
+            index_end += 50
+        return str(sum_numbers)[:10]
 
-s = big_number()
-print(s.large_Sum())
+
+print(big_number().large_Sum())

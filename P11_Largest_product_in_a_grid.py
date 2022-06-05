@@ -63,5 +63,4 @@ class largest_product_in_a_grid():
             return 0
 
 
-s = largest_product_in_a_grid()
-print(s.get_largest_product_in_the_grid())
+print(largest_product_in_a_grid().get_largest_product_in_the_grid())

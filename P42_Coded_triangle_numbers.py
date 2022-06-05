@@ -42,5 +42,4 @@ class coded_triangle_numbers():
                 0.5*self.last_generator_number*(self.last_generator_number+1))
 
 
-s = coded_triangle_numbers()
-print(s.get_solution())
+print(coded_triangle_numbers().get_solution())

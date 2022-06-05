@@ -29,5 +29,4 @@ class number_spiral_diagonals():
         self.sum_of_diagonals += self.last_corner_number
 
 
-c = number_spiral_diagonals()
-print(c.sum_diagonals())
+print(number_spiral_diagonals().sum_diagonals())

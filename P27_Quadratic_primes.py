@@ -40,5 +40,4 @@ class quadratic_primes():
         return a_times_b_in_longest_series
 
 
-s = quadratic_primes()
-print(s.get_a_times_b_in_longest_series_of_primes())
+print(quadratic_primes().get_a_times_b_in_longest_series_of_primes())

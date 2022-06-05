@@ -38,5 +38,4 @@ class collatz_sequence():
         self.number_that_produces_longest_lenght_of_chain = number
 
 
-s = collatz_sequence()
-print(s.longest_collatz_sequence())
+print(collatz_sequence().longest_collatz_sequence())

@@ -25,5 +25,4 @@ class pandigital_prime():
         return True
 
 
-s = pandigital_prime()
-print(s.pandigital_prime())
+print(pandigital_prime().pandigital_prime())

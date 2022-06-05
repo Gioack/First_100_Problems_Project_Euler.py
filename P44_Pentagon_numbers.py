@@ -20,5 +20,4 @@ class pentagon_numbers():
             n*(3*n-1)/2 for n in range(1, how_many_numbers+1)]
 
 
-s = pentagon_numbers()
-print(s.get_solution())
+print(pentagon_numbers().get_solution())
