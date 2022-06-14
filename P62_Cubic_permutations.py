@@ -23,7 +23,7 @@ def get_ordered_digits(number):
 
 
 def search_digits_made_by_5_cubes(cubes_with_same_digits):
-    for digits, list_of_numbers_with_those_digits in cubes_with_same_digits.items():
+    for list_of_numbers_with_those_digits in cubes_with_same_digits.values():
         if len(list_of_numbers_with_those_digits) == 5:
             return list_of_numbers_with_those_digits
 
