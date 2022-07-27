@@ -1,6 +1,5 @@
 # First 100 problems Project Euler.py
-I'm pushing here the solutions of the first 100 [Project Euler's](https://projecteuler.net/about) problems. I'll always use Python.
-This repository is a work in progress, I don't know how much it will take to solve all 100, but I will do it.  
+Solutions of the first 100 Project Euler's problems in Python.
 ## Why are you doing this?
 - There is not an updated source that does what this repository does.
 - This will improve other people's code.
