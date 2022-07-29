@@ -15,12 +15,12 @@ def is_lychrel(number):
     return True
 
 
-def get_inverse(number):
-    return int(str(number)[::-1])
-
-
 def is_palindromic(number):
     return get_inverse(number) == number
+
+
+def get_inverse(number):
+    return int(str(number)[::-1])
 
 
 print(solution())
